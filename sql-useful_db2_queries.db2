@@ -1,6 +1,6 @@
--- Created by: Scott Grivner
+-- Author: Scott Grivner
 -- Website: scottgrivner.dev
--- Useful Db2 SQL Queries
+-- Abstract: Useful Db2 SQL Queries
 
 -- Date/Time Functions:
 
