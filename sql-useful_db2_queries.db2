@@ -2,8 +2,31 @@
 -- Website: scottgrivner.dev
 -- Abstract: Useful Db2 SQL Queries
 
--- Date/Time Functions:
+-- Check Service Level:
+select service_level from sysibmadm.env_inst_info;
 
+-- Create Identifiers:
+-- Generate UUID
+SELECT  
+  (LEFT(TRANSLATE(CHAR(BIGINT(RAND() * 10000000000 )), 'abcdef123456789', '1234567890' ),8) 
+  CONCAT '-' 
+  CONCAT LEFT(TRANSLATE (CHAR(BIGINT(RAND() * 10000000000 )), 'abcdef123456789', '1234567890' ),4) 
+  CONCAT '-' 
+  CONCAT LEFT(TRANSLATE ( CHAR(BIGINT(RAND() * 10000000000 )), 'abcdef123456789', '1234567890' ),4) 
+  CONCAT '-' 
+  CONCAT LEFT(TRANSLATE ( CHAR(BIGINT(RAND() * 10000000000 )), 'abcdef123456789', '1234567890' ),4) 
+  CONCAT '-' 
+  CONCAT LEFT(TRANSLATE ( CHAR(BIGINT(RAND() * 10000000000000 )), 'abcdef123456789', '1234567890' ),12))
+  AS UUID
+FROM sysibm.sysdummy1
+
+-- Generate GUID HEX value using GENERATE_UNIQUE() 
+SELECT TRIM(CHAR(HEX(GENERATE_UNIQUE()))) AS GUID FROM sysibm.sysdummy1
+
+-- Reference:
+-- https://dbfiddle.uk/0RQZ1GR8
+
+-- Date/Time Functions:
 -- Select Current Date
 SELECT CURRENT_DATE AS CURRENTDATE
 FROM   SYSIBM.SYSDUMMY1
@@ -85,7 +108,6 @@ SELECT NEXT_DAY(CURRENT DATE, 'WEDNESDAY')
 FROM   SYSIBM.SYSDUMMY1;
 
 -- Misc Functions:
-
 -- Find Column Values with Non-Standard Characters
 SELECT COLUMN_NAME
 FROM   TABLE_NAME
