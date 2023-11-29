@@ -7,7 +7,7 @@
 </div>
 <br>
 <p align="center">
-    <a href="https://www.ibm.com/docs/en/i/7.4?topic=overview-db2-i"><img src="https://img.shields.io/badge/DB2 for IBM i-7.4-052FAD?style=for-the-badge&logo=ibm" alt="IBM Badge" /></a>
+    <a href="https://www.ibm.com/docs/en/i/7.4?topic=overview-db2-i"><img src="https://img.shields.io/badge/Db2 for IBM i-7.4-052FAD?style=for-the-badge&logo=ibm" alt="IBM Badge" /></a>
     <br>
     <a href="https://github.com/scottgriv"><img src="https://img.shields.io/badge/github-follow_me-181717?style=for-the-badge&logo=github&color=181717" alt="GitHub Badge" /></a>
     <a href="mailto:scott.grivner@gmail.com"><img src="https://img.shields.io/badge/gmail-contact_me-EA4335?style=for-the-badge&logo=gmail" alt="Email Badge" /></a>
@@ -18,9 +18,9 @@
 
 ---------------
 
-<h1 align="center">Useful DB2 SQL Queries</h1>
+<h1 align="center">Useful Db2 SQL Queries</h1>
 
-A sample of useful IBMi DB2 queries.
+A sample of useful IBMi Db2 queries.
 
 ---------------
 
