@@ -33,7 +33,7 @@ A sample of useful IBMi Db2 queries.
 
 ## Getting Started
 
-Use the [sql-useful_db2_queries.db2](sql-useful_db2_queries.db2) file to run the queries in this repository.
+Use the [sql-useful_db2_queries.sql](sql-useful_db2_queries.sql) file to run the queries in this repository.
 
 ## Resources
 
