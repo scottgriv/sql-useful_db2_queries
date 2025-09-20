@@ -1,5 +1,5 @@
 -- Author: Scott Grivner
--- Website: scottgrivner.dev
+-- Website: linktr.ee/scottgriv
 -- Abstract: Useful Db2 SQL Queries
 
 -- Check Service Level:
